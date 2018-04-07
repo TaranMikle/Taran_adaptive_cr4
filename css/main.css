@@ -5,3 +5,122 @@
 body {
 	margin: 0;
 }
+
+.container {
+	max-width: 1000px;
+	min-width: 320px;
+	margin: 0 auto;
+	padding: 0 15px;
+	height: auto;
+}
+
+.container:after {
+	display: block;
+	content: '';
+	clear: both;
+}
+
+.logo {
+	float: left;
+	width: 200px;
+	height: auto;
+	background: yellow;
+	display: inline-block;
+}
+
+.logo_text {
+	color: blue;
+	text-align: center;
+}
+
+.login {
+	float: right;
+	width: 200px;
+	height: auto;
+	display: inline-block;
+	border: 1px solid red;
+}
+
+.login_text {
+	color: blue;
+	text-align: center;
+}
+
+.number {
+	float: right;
+	width: 200px;
+	height: auto;
+	display: inline-block;
+}
+
+.number_text {
+	color: blue;
+	text-align: center;
+}
+
+.main {
+	width: 100%;
+	height: auto;
+	font-size: 0;
+	margin-top: 10px;
+}
+
+.thumbnail {
+	width: 33.3%;
+	height: 300px;
+	background: red;
+	display: inline-block;
+	text-align: center;
+	border: 1px solid #fff;
+}
+
+.first {
+	position: relative;
+}
+
+.offer {
+	position: absolute;
+	top: 10px;
+	right: 10px;
+	width: 50px;
+	display: inline-block;
+	border: 1px solid green;
+	text-align: center;
+}
+
+.text_offer {
+	font-size: 14px;
+	margin: 0;
+}
+
+.thumb_text {
+	font-size: 14px;
+	color: #fff;
+	line-height: 300px;
+}
+
+@media screen and (max-width: 768px) {
+	.thumbnail {
+		display: block;
+		margin: auto;
+	}
+	.logo {
+		display: block;
+		margin: auto;
+		float: none;
+	}
+
+	.login {
+		display: block;
+		margin: auto;
+		float: none;
+	}
+
+	.number {
+		display: block;
+		margin: auto;
+		float: none;
+	}
+
+
+}
